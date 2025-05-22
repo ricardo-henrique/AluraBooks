@@ -50,8 +50,43 @@
     <section class="banner">
       <h2 class="banner-title">Já sabe por onde começar?</h2>
       <p class="banner-text">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
-      <input type="search" placeholder="Qual será sua próxima leitura?" />
+      <input type="search" class="banner-research" placeholder="Qual será sua próxima leitura?" />
+    </section>
+    <section class="carrosel">
+      <h2 class="carrosel-title">Novos Lançamentos</h2>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="./img/ApacheKafka.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/Liderança.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/Javascript.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/Guia Front-end.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/Portugol.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/Acessibilidade.svg" alt="" />
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/carrosel.js"></script>
   </body>
 </html>
