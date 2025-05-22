@@ -4,18 +4,45 @@
   background: no-repeat center url("../img/Menu.svg");
   display: inline-block;
 }
-
 header {
   background-color: var(--white);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
-
 .container {
   display: flex;
   align-items: center;
 }
 .container-image {
   padding: 1em;
+}
+.menu-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 60vw;
+}
+.container-button:checked ~ .menu-list {
+  display: block;
+}
+.menu-title,
+.menu-item {
+  padding: 1em;
+  background: var(--white);
+}
+.menu-title {
+  color: var(--orange);
+  font-weight: 700;
+}
+.menu-link {
+  background: var(--azul-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+}
+.container-button {
+  display: none;
 }

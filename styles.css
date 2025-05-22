@@ -2,7 +2,13 @@
 :root {
   --background: #ebecee;
   --white: #fff;
+  --orange: #eb9b00;
+  --azul-gradient: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+  --main-font-family: "Poppins", sans-serif;
 }
 body {
   background-color: var(--background);
+  font-family: var(--main-font-family);
+  font-size: 1em;
+  font-weight: 400;
 }
