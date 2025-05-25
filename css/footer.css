@@ -5,3 +5,32 @@ footer {
   background-color: var(--white);
   padding: 1em 1.5em;
 }
+.baseboard-list {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  .baseboard-list-item {
+    display: flex;
+    align-items: center;
+    margin: 0.6em 0;
+  }
+  .baseboard-list-link {
+    color: var(--grey);
+    text-decoration: none;
+    margin-left: 0.6em;
+  }
+  .baseboard-list-title {
+    font-size: 0.875rem;
+    color: var(--light-grey);
+  }
+  .baseboard-title {
+    font-size: 1.4rem;
+  }
+  .baseboard-list {
+    display: block;
+  }
+}
