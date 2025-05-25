@@ -59,3 +59,23 @@
   color: var(--white);
   text-decoration: none;
 }
+@media screen and (max-width: 1024px) {
+  .carrosel-title {
+    font-size: 1.625rem;
+  }
+  .swiper-pagination {
+    margin: 2em 0 3em 0;
+  }
+  .swiper {
+    width: 60%;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block;
+    top: 60%;
+  }
+  .card {
+    width: 40%;
+    margin: 2em auto;
+  }
+}

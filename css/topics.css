@@ -24,3 +24,9 @@
   font-size: 0.875em;
   font-weight: 700;
 }
+@media screen and (min-width: 1024px) {
+  .topic-title,
+  .topics-link {
+    font-size: 1.5rem;
+  }
+}

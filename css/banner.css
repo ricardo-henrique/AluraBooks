@@ -29,3 +29,14 @@
   background: url("../img/Lupa.svg") no-repeat;
   background-position: 1em;
 }
+@media screen and (min-width: 1024px) {
+  .banner-title {
+    font-size: 2.25rem;
+  }
+  .banner-research {
+    width: 50%;
+  }
+  .banner-research::placeholder {
+    background-position: 7em;
+  }
+}
