@@ -9,8 +9,10 @@
   --white: #fff;
   --orange: #eb9b00;
   --blue: #002f52;
+  --black: #000;
   --azul-gradient: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
   --main-font-family: "Poppins", sans-serif;
+  --secondary-font: "Josefin Sans", sans-serif;
 }
 body {
   background-color: var(--background);

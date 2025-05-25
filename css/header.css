@@ -46,3 +46,48 @@ header {
 .container-button {
   display: none;
 }
+.container-title {
+  display: none;
+}
+.options {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .container-title,
+  .container-title-bold {
+    font-family: var(--secondary-font);
+    font-size: 1.875rem;
+  }
+  .container-title {
+    font-weight: 400;
+    display: block;
+  }
+  .container-title-bold {
+    font-weight: 700;
+  }
+  .options {
+    display: flex;
+  }
+  .option-item {
+    padding: 0 1em;
+    text-transform: uppercase;
+  }
+  .option-link {
+    text-decoration: none;
+    color: var(--black);
+  }
+  .favorite {
+    display: none;
+  }
+  .header-menu-hamburguer {
+    display: none;
+  }
+  .option-button:checked ~ .menu-list {
+    display: block;
+    width: auto;
+  }
+  .option-button {
+    display: none;
+  }
+}
