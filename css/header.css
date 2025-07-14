@@ -4,6 +4,12 @@
   background: no-repeat center url("../img/Menu.svg");
   display: inline-block;
 }
+.container-button:checked ~ .container-label > .header-menu-hamburguer {
+  background-image: url("../img/Menu-Aberto.svg");
+}
+.container-button:checked ~ .container-label {
+  background: var(--azul-gradient);
+}
 header {
   background-color: var(--white);
   display: flex;
@@ -52,7 +58,9 @@ header {
 .options {
   display: none;
 }
-
+.container-text {
+  display: none;
+}
 @media screen and (min-width: 1024px) {
   .container-title,
   .container-title-bold {
@@ -89,5 +97,36 @@ header {
   }
   .option-button {
     display: none;
+  }
+  .option-button:checked ~ .options-label > .option-item {
+    background: var(--azul-gradient);
+    color: var(--white);
+  }
+  .option-item {
+    padding: 2em 1em;
+  }
+  .menu-item:hover {
+    background: var(--azul-gradient);
+  }
+  .menu-item:hover > .menu-link {
+    -webkit-text-fill-color: var(--white);
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 1728px) {
+  .container-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--black);
+  }
+  header {
+    padding: 0 2em;
+  }
+  .options {
+    margin-right: auto;
+  }
+  .container-text {
+    display: block;
   }
 }
